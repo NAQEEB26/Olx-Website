@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX-Buy and Sell for free anywhere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- nav bar section -->
+    <div class="container-fluid">
+        <div class="firstnavbar">
+            <ul>
+                <li>
+                    <img width="50px"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMIAAACBCAMAAACl85XBAAAAaVBMVEX///86d/81dP8vcv9vlv/x9f9Thv69zf8ea//U3/8pb//c5f6xxP8kbf+Xsv/8/f/2+f/j6v+ov/+QrP9LgP/Z4v9+oP8AYP+4yv8UZ/9mkf9ei//s8P/H1P+ctv9Bev+Gpv52m//O2v/YRYeAAAAEK0lEQVR4nO2c25qqIBSAFSqR8mxT5lhN7/+Q22rMExBLZyv2rf9mLkaUX1ycybIQBEEQBEEQBEEQBJmbYO/22c6dKxDrDbG7kNXcuQIhUqCoMDGoYAKo8PcEYbQvzknJ8bZdBxopzFLYOueceFnG75R/6SXZueGbRAYphMdV6vF2dghnl5MfKdOZohC4V4/1s/LUyNJiLU9qiML2i3rC/P/miJ8caVojFMIrpQqBZ1Hke0lqExScVFUCr1x5Z/HXZIBCQsUx0INvvo1U2G90iuAJ4UcDFbbpuyhoO8TGKRS25kdU4fmGKdx0w6CG9RxmVXBTsEEZ1N1vaU6FCBQHtUMnpudUWPEhBjah7T6TWiE6OjXHbq18c5r/VfRixCTDDEqHTetZaoX4wGoyrz05c27+k2Wy9l+GO+gresBbIa1W2LVeFEmbDnG7SaLQyafLgFCuYO5AhbIOr/N57jSqUIVYv1HuQ/PGcA6k0HCIs24imEI0pD6t4Y2+N0yh/JaetUHcC0Wggj+mEMp85HVEAxVskkWiMoAqBENrowpWDFZ4xHS/DKAKMRupQNLhCja5JKLngxQCwVOBZK/nwRXKHq/oliCFQp09Qjnnb3qA9NU2DFCQ3BKicFbdl7D0x/f9a+6pGj+SV52FWRTCkyJz7OJE99mv4NtdZaqSqJq3WRQi+W0Jafal3Vx+Jasu/DsFQB/J6dfJL4OideX3RpoD+qWlIH9Wj0w9a9hC3kftGJQOuexbIraWguVrFkP37amRVqmCkfFe2owfQi2FXm9OAoUYWLJgJrZgFvtL9hYzV0/B8nXa0QxksJYpiKZY5LHPjpoK6jr8AbFBBtZWWqW6gqvDleRyttNVCPx3MX24gQwsV/JSmt3PBolEoRq76Qz/1TENi2Slwkm4oLOTBH9Vq+ooBMqYhkWyUmElVDjKFH70FSzrJG/ovR3UYI5SUDbS1TjuLxT+XyzEyukSCnaYvEYSjTLbl3Ogw+Ttwu7tlBXdAB0mbp11RrmUCleQpEzbR9pp9ZGA8TBpTzXmeuN0mMOU44VCe7xARZ+xDO1R223SURsHjNrWiqayMXa+GTx2Vve6FjGDYd3U91rCPNLcs3m2sHwXNadKhct8C5rZvrc+omgEri+cxxXDmPUF+1DqB8nY9YWxqzx0xCoPeabtdxGWstZme7/2QW+NYSErnjary+86csVznnVnmzS+wCAZue48x+o/O7R2KQbXcav/s+zB6I5si3F7MIbuhKEG7YQZth/JM2k/0ifsChuwN4+btjfvE3ZIfsI+VesDdgtbn7Bn+7Fz/l0rZ/jOeet+foEs+/yCdT9rqjpFslnAKZI7Sz/L82Tr+I8TVd79QBVb3omqJ69zbb7jLvFc2yBQwQRQwQRQwQQ+4BcYPuB3MBAEQRAEQRAEQRBkyfwDyl9PWEZ8tMwAAAAASUVORK5CYII="
+                        alt="">
+                </li>
+                <li><img width="50" src="./images/car logo.jpg" alt="">Motors</li>
+                <li><img width="50" src="./images/property logo.jpg" alt="">Property</li>
+            </ul>
+        </div>
+            <div class="mainnavbar">
+                <ul>
+                    <li><img width="60px"
+                            src="data:image/png;base64,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"
+                            alt=""></li>
+                    <li ><input id="searchbar" placeholder="Pakistan" type="search"></li>
+
+                    <li ><input id="mainsearchbar" placeholder="Find Cars, Mobile Phones and more...
+            " type="search"></li>
+                    <li ><a href="">Login</a></li>
+                    <li><button id="sellbutton">Sell now</button></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+
+        <div id="carouselExample" class="carousel slide width=20px">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img width="100%" height="200px" src="./images/banner 3.jpg" alt="">
+
+                </div>
+                <div class="carousel-item">
+                    <img width="100%" height="200px" src="./images/banner 2.jpg" alt="">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <br>
+<!-- olx catogaries section -->
+<section>
+    <h1>All Catogaries</h1><br>
+    <div class="catogariessection">
+    <figure><img width="100" src="./images/mobile logo.png" alt=""><figcaption>Mobiles</figcaption></figure>
+    <figure><img width="100"  src="./images/vehivle logo.png" alt=""><figcaption>Vehicle</figcaption></figure>
+    <figure><img width="100"  src="./images/house logo.png" alt=""><figcaption>Property for <br>sale</figcaption></figure>
+    <figure><img width="100"  src="./images/key logo.png" alt=""><figcaption></figcaption>Property for <br> Rent</figure>
+    <figure><img width="100"  src="./images/camera logo.png" alt=""><figcaption></figcaption>Electronics & <br>Home  Appliances</figure>
+    <figure><img width="100"  src="./images/large vehicle logo.png" alt=""><figcaption></figcaption>Business & <br> Industrial & <br> Agriculture</figure>
+    <figure><img width="100"  src="./images/bike logo.png" alt=""><figcaption></figcaption>Bikes</figure>
+   
+    </div>
+    <div class="catogariessection2">
+    <figure><img width="100"  src="./images/furniture.png" alt=""><figcaption></figcaption>Furniture</figure>
+
+        <figure><img width="100"  src="./images/service logo.png" alt=""><figcaption></figcaption>Services</figure>
+        <figure><img width="100"  src="./images/jobs.png" alt=""><figcaption></figcaption>JObs</figure>
+    <figure><img width="100"  src="./images/animals.png" alt=""><figcaption></figcaption>Animals</figure>
+    <figure><img width="100"  src="./images/fashion.png" alt=""><figcaption></figcaption>Fashion & Beauty</figure>
+    <figure><img width="100"  src="./images/books.png" alt=""><figcaption></figcaption>Books & sport</figure>
+    <figure><img width="100"  src="./images/kids.png" alt=""><figcaption></figcaption>Kids</figure>
+</div>
+</section>
+
+
+
+
+    <br>
+
+    <h1>Cars</h1>
+    <div class="card-group">
+        <div class="card">
+            <img src="./images/car 1.jpg" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="card">
+            <img src="./images/car 2.jpg" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="card">
+            <img src="./images/car 3.jpg" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h1>Motorcycle & Bikes</h1>
+    <div class="card-group">
+        <div class="card">
+            <img src="./images/bike 1.jpg" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="card">
+            <img height="290px" src="./images/bike 2.jpg" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="card">
+            <img height="290px" src="./images/bike 3.jpg" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <h1>Houses</h1>
+    <div class="card-group">
+        <div class="card">
+            <img height="290px" src="./images/house 1.jpg" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="card">
+            <img height="290px" src="./images/house 2.jpg" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>&nbsp;&nbsp;&nbsp;
+        <div class="card">
+            <img height="290px" src="./images/house 3.jpg" alt="">
+
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div><br><br>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                    <div class="footer-item">
+                        <div>
+                            <img src="https://www.olx.com.pk/assets/olxMobileApp.f5579f77e849b600ad60857e46165516.webp"
+                                alt="">
+                        </div>
+                        <div >
+                            <h1>TRY THE OLX APP</h1> <br>
+                           <p><strong>Buy, sell and find just about  anything  using  the app on your mobile.</strong> </p>
+                        </div>
+                        <div class="footer-item2">
+                            </div>
+                            <div class="footer-item3">
+                            <p><strong>Get Your APP Today</strong></p>
+                            <span class="app-links">
+                            <img src="./images/app galery.svg" alt="">&nbsp;&nbsp;&nbsp;
+                            <img src="./images/play store.svg" alt="">
+                        </span>
+
+                        </div>
+                </div>
+                <!-- Left -->
+
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>OLX Buy and Sell Easily 
+                        </h6>
+                        <p>
+                            Buy, sell and find just about  anything  using  the app on your mobile.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Mobiles</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vehicles</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Accessories</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Houses</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Follow Us</h6>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: #002f34; color:aliceblue;">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="https://naqeeb-s-portfolio-26.web.app/">Naqeeb's-Portfolio.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
